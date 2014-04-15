@@ -1,4 +1,10 @@
 #!/bin/bash
+
+###################################
+# Note to restore:
+# Use gzip -d file.sql.gz will decompress the file in place and the original .gz file will be removed. An alternative is to use zcat file.sql.gz > file.sql.
+###################################
+
 NOW=$(date +"%Y-%m-%d_%H-%M-%S")
 
 BackupPath='/srv/backup/db/'		# set your backup folder
